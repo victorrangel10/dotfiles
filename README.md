@@ -17,9 +17,9 @@ My personal dotfiles!
 - **blueberry** - gui bluetooth manager
 - **thunar** - filemanager
 - **network-manager-applet** - gui wifi manager
+
+
+## Other useful apps
+
 - **lsd** better ls
-
-## Other apps
-
--- oh my zsh
--- powerlevel10k
+-- **powerlevel10k**
