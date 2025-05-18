@@ -198,7 +198,7 @@
     "custom/wifi": {
         "format" : "",
 		"tooltip": false,
-		"on-click": "nm-connection-editor"
+		"on-click": "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center "
     },
     "custom/bluetooth": {
         "format" : "",

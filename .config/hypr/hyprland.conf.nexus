@@ -15,7 +15,7 @@
 ################
 
 # See https://wiki.hyprland.org/Configuring/Monitors/
-monitor=,1920x1080@75,auto,1
+monitor=,1920x1080@60,auto,1
 
 ###################
 ### MY PROGRAMS ###
@@ -25,9 +25,8 @@ monitor=,1920x1080@75,auto,1
 
 # Set programs that you use
 $terminal = kitty
-$fileManager = dolphin
+$fileManager = thunar
 $menu = rofi -show drun -show-icons
-
 
 #################
 ### AUTOSTART ###
@@ -38,7 +37,7 @@ $menu = rofi -show drun -show-icons
 
 # exec-once = $terminal
 # exec-once = nm-applet &
-exec-once = waybar
+exec-once = waybar 
 exec-once = swww-daemon
 exec-once = hyprsunset
 exec-once = wal -R
@@ -54,6 +53,7 @@ env = XCURSOR_THEME,Capitaine Cursors (Gruvbox) - White
 #####################
 ### LOOK AND FEEL ###
 #####################
+
 
 # Refer to https://wiki.hyprland.org/Configuring/Variables/
 
@@ -141,7 +141,7 @@ master {
 # https://wiki.hyprland.org/Configuring/Variables/#misc
 misc { 
     force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
-    disable_hyprland_logo = false # If true disables the random hyprland logo / anime girl background. :(
+    disable_hyprland_logo = true # If true disables the random hyprland logo / anime girl background. :(
 }
 
 
@@ -256,6 +256,11 @@ binde =, XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK
 
 binde =, XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-
 
+
+
+binde = ,XF86MonBrightnessDown, exec, brightnessctl s 10%-
+
+binde = ,XF86MonBrightnessUp, exec, brightnessctl s +10%
 #Media Control
 bind =               , XF86AudioPlay       , exec           , playerctl play-pause
 bind =               , XF86AudioNext       , exec           , playerctl next
@@ -264,6 +269,7 @@ bind =               , XF86audiostop       , exec           , playerctl stop
 
 # Screenshot
 bind = $mainMod SHIFT, p,exec, hyprshot -m region
+
 
 
 ##############################
@@ -279,7 +285,8 @@ bind = $mainMod SHIFT, p,exec, hyprshot -m region
 # Example windowrule v2
 windowrulev2 = float,class:^(thunar)$
 windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
+
 input {
-kb_layout=us,br
-kb_options=grp:caps_toggle
+    kb_layout = us,br
+    kb_options = grp:caps_toggle
 }
