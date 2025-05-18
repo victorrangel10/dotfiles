@@ -59,9 +59,8 @@ env = XCURSOR_THEME,Capitaine Cursors (Gruvbox) - White
 
 # https://wiki.hyprland.org/Configuring/Variables/#general
 general { 
-    gaps_in = 10
-    gaps_out = 20
-    border_size = 4
+    gaps_in = 0
+    gaps_out = 0
 
     # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
     col.inactive_border = rgb(23211F) 
@@ -94,12 +93,13 @@ decoration {
 
     # https://wiki.hyprland.org/Configuring/Variables/#blur
     blur {
-        enabled = false
-        size = 3
+        enabled = true
+        size = 8
         passes = 1
         
         vibrancy = 0.1696
     }
+
 }
 
 # https://wiki.hyprland.org/Configuring/Variables/#animations
@@ -279,4 +279,7 @@ bind = $mainMod SHIFT, p,exec, hyprshot -m region
 # Example windowrule v2
 windowrulev2 = float,class:^(thunar)$
 windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
-
+input {
+kb_layout=us,br
+kb_options=grp:caps_toggle
+}
