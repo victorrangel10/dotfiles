@@ -26,3 +26,7 @@ export NVM_DIR="$HOME/.nvm"
 # Load Angular CLI autocompletion.
 #source <(ng completion script)
 source /home/vafrangel/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=160'
+
