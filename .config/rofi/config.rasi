@@ -1,4 +1,4 @@
-@import "/home/victor/.cache/wal/colors-rofi-dark.rasi"
+@import "/home/vafrangel/.cache/wal/colors-rofi-dark.rasi"
 /* Replace the path with your USERNAME */
 
 * {
