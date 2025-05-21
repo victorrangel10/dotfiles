@@ -1,4 +1,5 @@
 # vim:fileencoding=utf-8:foldmethod=marker
+#include ~/.cache/wal/colors-kitty.conf
 
 #: Fonts {{{
 
@@ -21,6 +22,7 @@ font_family     Fira Code
 #: syntax>.
 
 font_size 16.0
+cursor_trail 3
 
 #: Font size (in pts).
 
@@ -1178,7 +1180,7 @@ font_size 16.0
 
 #: The foreground and background colors.
 
-#background_opacity 1.0
+background_opacity 0.7
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -1251,7 +1253,7 @@ background_blur 1
 
 #:     transparent_background_colors red@0.5 #00ff00@0.3
 
-# dynamic_background_opacity no
+dynamic_background_opacity yes
 
 #: Allow changing of the background_opacity dynamically, using either
 #: keyboard shortcuts (increase_background_opacity and
@@ -1291,8 +1293,7 @@ background_blur 1
 
 #: The color table {{{
 
-#: The 256 terminal colors. There are 8 basic colors, each color has a
-#: dull and bright version, for the first 16 colors. You can set the
+#: The 256 terminal colors. There are 8 basic colors, each color has a : dull and bright version, for the first 16 colors. You can set the
 #: remaining 240 colors as color16 to color255.
 
 # color0 #000000
@@ -1362,6 +1363,7 @@ background_blur 1
 #: }}}
 
 #: }}}
+#
 
 #: Advanced {{{
 
@@ -2601,7 +2603,8 @@ background_blur 1
 
 
 
+confirm_os_window_close 0
 # BEGIN_KITTY_THEME
-# 1984 Dark
-include current-theme.conf
+# Ayu Mirage
+#include current-theme.conf
 # END_KITTY_THEME
